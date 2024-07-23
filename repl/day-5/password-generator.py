@@ -12,6 +12,7 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 pwd_letters = []
 pwd_symbols = []
 pwd_numbers = []
+#You can use a single list instead 
 
 for i in range(0, nr_letters):
   #pwd_letters.append(letters[random.randint(0, len(letters)-1)])
