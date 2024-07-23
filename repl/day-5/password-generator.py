@@ -29,15 +29,24 @@ pwd_easy_str = ""
 for i in range(0, len(pwd_easy)):
   pwd_easy_str += pwd_easy[i]
 print(f"Your password is (easy): {pwd_easy_str}")
+
 #Hard Level - Order of characters randomised:
 #e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
-#This is not the right implementation as there is no way to ensure that the requirements are respected. 
-pwd_hard = []
-for i in range(0, len(pwd_easy)):
-  pwd_hard.append(pwd_easy[random.randint(0, len(pwd_easy)-1)])
 
-pwd_hard_str = ""
-for i in range(0, len(pwd_hard)):
-  pwd_hard_str += pwd_hard[i]
-  
-print(f"Your password is (hard): {pwd_hard_str}")
+#Trying shuffle 
+#https://stackoverflow.com/questions/2668312/shuffle-string-in-python
+easy_pwd_chars = list(pwd_easy_str)
+random.shuffle(easy_pwd_chars)
+pwd_hard_str = ''.join(easy_pwd_chars)
+print(f"Your password is (hard): {pwd_hard_str}")  
+
+#This is not the right implementation as there is no way to ensure that the requirements are respected. 
+#pwd_hard = []
+#for i in range(0, len(pwd_easy)):
+  #pwd_hard.append(pwd_easy[random.randint(0, len(pwd_easy)-1)])
+
+#pwd_hard_str = ""
+#for i in range(0, len(pwd_hard)):
+  #pwd_hard_str += pwd_hard[i]
+
+#print(f"Your password is (hard): {pwd_hard_str}")
