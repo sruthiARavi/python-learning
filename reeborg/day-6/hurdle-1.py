@@ -7,19 +7,18 @@ def turn_right():
     turn_left()
     
 def jump():
+    #first and last line of the function 
+    #only for the purposes of this specific 
+    #requirement 
+    move()  
     turn_left()
     move()
     turn_right()
     move()
     turn_right()
     move()
+    turn_left()
 
 #hurdle-1 challenge 
-for number in range(1, 7): #to do 6 jumps
-    move()
+for step in range(6): #to do 6 jumps, so 0-6, not including 6
     jump()
-    turn_left()
-
-
-
-    
