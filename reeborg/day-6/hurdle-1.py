@@ -20,5 +20,15 @@ def jump():
     turn_left()
 
 #hurdle-1 challenge 
+'''
 for step in range(6): #to do 6 jumps, so 0-6, not including 6
     jump()
+'''
+
+#Using while loop 
+number_of_hurdles = 6
+while number_of_hurdles > 0:
+    jump()
+    number_of_hurdles -= 1
+
+    
