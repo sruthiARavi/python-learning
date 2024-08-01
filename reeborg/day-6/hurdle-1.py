@@ -20,6 +20,7 @@ def jump():
     turn_left()
 
 #hurdle-1 challenge 
+#https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%201&url=worlds%2Ftutorial_en%2Fhurdle1.json
 '''
 for step in range(6): #to do 6 jumps, so 0-6, not including 6
     jump()
