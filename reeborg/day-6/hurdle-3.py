@@ -15,10 +15,10 @@ def jump():
     move()
     turn_left()
 
-#hurdle-2 challenge 
-while not at_goal():
-    if front_is_clear():
-        move()
-    elif wall_in_front():
+#hurdle-3 challenge 
+#https://reeborg.ca/reeborg.html?lang=en&mode=python&menu=worlds%2Fmenus%2Freeborg_intro_en.json&name=Hurdle%203&url=worlds%2Ftutorial_en%2Fhurdle3.json
+while not at_goal():    
+    if wall_in_front():
         jump()
-     
+    else:
+        move()
